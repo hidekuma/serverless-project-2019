@@ -1,13 +1,21 @@
 # 2019 AWS study
 
 ## Environment
-- pyenv
-- python 3.7.3
-- virtualenv
-- awscli
+### required
 - AWS account
 
+### optional
+- pyenv
+    - python 3.7.3
+    - virtualenv
+        - awscli
+
 ## Serverless web application
-- S3
-- Lambda
 - API Gateway
+- Lambda
+- S3
+- DynamoDB
+
+### flow
+1. API Gatway - lambda - dynamoDB
+2. S3 (+CloudFront)
