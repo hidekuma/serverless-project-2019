@@ -18,16 +18,19 @@
                         url: 'https://epn2pajpf4.execute-api.ap-northeast-2.amazonaws.com/dev/conference',
                         method: 'POST',
                         dataType: 'json',
-                        data:{
+                        data:JSON.stringify({
                             user_name: user_name,
                             user_phone: user_phone,
                             company_name: company_name
-                        },
+                        }),
                         success: function(r){
                             console.log('success', r);
                         },
                         fail: function(err){
                             console.log('failed', err);
+                        },
+                        complete: function(r){
+                            console.log('completed', r);
                         }
                     });
                 });
