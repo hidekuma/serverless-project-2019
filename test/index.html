@@ -4,10 +4,46 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Serverless web</title>
+        <script
+              src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
+        <script charset="utf-8">
+            $(document).ready(function(){
+                $('#submitForm > button').on('click', function(e){
+                    var user_name = $('#user_name').val();
+                    var user_phone = $('#user_phone').val();
+                    var company_name = $('#company_name').val();
+                    $.ajax({
+                        url: 'https://epn2pajpf4.execute-api.ap-northeast-2.amazonaws.com/dev/conference',
+                        method: 'POST',
+                        dataType: 'json',
+                        data:{
+                            user_name: user_name,
+                            user_phone: user_phone,
+                            company_name: company_name
+                        },
+                        success: function(r){
+                            console.log('success', r);
+                        },
+                        fail: function(err){
+                            console.log('failed', err);
+                        }
+                    });
+                });
+            })
+            
+        </script>
     </head>
     <body>
         <div class="content">
             <h1>Welcome serverless web application.</h1>
+            <div id='submitForm'>
+                <p><label for="user_name">user_name: </label><input type="text" name="user_name" value="" id="user_name"></p>
+                <p><label for="user_phone">user_phone: </label><input type="text" name="user_phone" value="" id="user_phone"></p>
+                <p><label for="company_name">company_name: </label><input type="text" name="company_name" value="" id="company_name"></p>
+                <button>submit</button>
+            </div>
         </div>
     </body>
 </html>
