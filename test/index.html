@@ -10,6 +10,21 @@
                 crossorigin="anonymous"></script>
         <script charset="utf-8">
             $(document).ready(function(){
+                $.ajax({
+                    url: 'https://epn2pajpf4.execute-api.ap-northeast-2.amazonaws.com/dev/conference?user_phone=01044444444',
+                    method: 'GET',
+                    success: function(r){
+                        console.log('success', r);
+                       // $('#submitList > ul')
+                    },
+                    fail: function(err){
+                        console.log('failed', err);
+                    },
+                    complete: function(r){
+                        console.log('completed', r);
+                    }
+                })
+                //$('#submitList')
                 $('#submitForm > button').on('click', function(e){
                     var user_name = $('#user_name').val();
                     var user_phone = $('#user_phone').val();
@@ -47,6 +62,11 @@
                 <p><label for="company_name">company_name: </label><input type="text" name="company_name" value="" id="company_name"></p>
                 <button>submit</button>
             </div>
+            <div id="submitList">
+                <ul>
+                </ul>
+            </div>
+
         </div>
     </body>
 </html>
