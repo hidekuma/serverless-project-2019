@@ -8,7 +8,7 @@ $(document).ready(function(){
                 r['items'].forEach(function(item) {
                     html += '<div  class="mdl-cell mdl-cell--4-col">'
                     html += '<div class="history-card-wide mdl-card mdl-shadow--2dp">'
-                    html += '<div class="mdl-card__title" style="background: url(\'https://fcsw-2019.s3.ap-northeast-2.amazonaws.com/qrcodes/'+item['user_phone']+'/qrcode.jpg\') center / cover;">'
+                    html += '<div class="mdl-card__title" style="background: url(\'http://d21wnzpstszop8.cloudfront.net/qrcodes/'+item['user_phone']+'/qrcode.jpg\') center / cover;">'
                     //html += '<div>'
                     //html += 'Serverless Web project'
                     html += '<h2 class="mdl-card__title-text">'+item['user_name']+'</h2>'
