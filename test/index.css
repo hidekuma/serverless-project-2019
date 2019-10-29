@@ -17,12 +17,12 @@
 }
 
 .history-card-wide.mdl-card {
-    width: 600px;
+    width: 300px;
 
 }
 .history-card-wide > .mdl-card__title {
     color: #fff;
-    height: 400px;
+    height: 210px;
     /*background: url('https://placehold.it/500x500?text=Serverless Web Project') center / cover;*/
 
 }

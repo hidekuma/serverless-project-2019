@@ -1,10 +1,12 @@
 from PIL import Image, ImageDraw, ImageFont
 import qrcode
 user_phone = '010-4124-4444'
-user_name = 'Hidekuma'
+user_name = '히데쿠마'
+user_id = 'hidekuma'
 company_name = 'TestCompany.inc'
 title = 'Fast Campus 2019'
-ttf = './NotoSans-Regular.ttf'
+ttf = './NotoSansMonoCJKkr-Bold.otf'
+thin_ttf = './NotoSansCJKkr-Regular.otf'
 
 qr = qrcode.QRCode(
     version=1,
@@ -19,7 +21,7 @@ qr_img = qr.make_image(fill_color="black", back_color="white")
 
 
 W, H = (300, 210)
-font_s = ImageFont.truetype(ttf, 12)
+font_s = ImageFont.truetype(thin_ttf, 12)
 font_m = ImageFont.truetype(ttf, 15)
 font_b = ImageFont.truetype(ttf, 20)
 
@@ -38,9 +40,10 @@ draw.text((20, text_size[1]+25), 'Serverless web project', fill='#000', font=fon
 draw.line((0, text_size[1]+50, img.size[0], text_size[1]+50), fill='#000')
 
 draw.text((130, 110), user_name, fill='#000', font=font_m)
-draw.text((130, 130), f':: {company_name}', fill='#000', font=font_m)
+draw.text((130, 130), f':: {company_name}', fill='#000', font=font_s)
 draw.text((130, 160), f'[FULL CONFERENCE PASS]', fill='#ed244b', font=font_s)
 img.paste(qr_img, (1, text_size[1]+60))
 
-img.save('./signed.jpg')
+# img.save(f'/tmp/signed.jpg')
+img.show()
 

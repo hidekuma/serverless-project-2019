@@ -1,23 +1,23 @@
 $(document).ready(function(){
     //$('#fixed-tab-2').on('click', function(){
         $.ajax({
-            url: 'https://epn2pajpf4.execute-api.ap-northeast-2.amazonaws.com/dev/conference?user_phone=*',
+            url: 'https://epn2pajpf4.execute-api.ap-northeast-2.amazonaws.com/dev/conference?user_id=*',
             method: 'get',
             success: function(r){
                 var html = '';
                 r['items'].forEach(function(item) {
                     html += '<div  class="mdl-cell mdl-cell--4-col">'
                     html += '<div class="history-card-wide mdl-card mdl-shadow--2dp">'
-                    html += '<div class="mdl-card__title" style="background: url(\'http://d21wnzpstszop8.cloudfront.net/qrcodes/'+item['user_phone']+'/qrcode.jpg\') center / cover;">'
+                    html += '<div class="mdl-card__title" style="background: url(\'http://d21wnzpstszop8.cloudfront.net/qrcodes/'+item['user_id']+'/qrcode.jpg\') center / cover;">'
                     //html += '<div>'
                     //html += 'Serverless Web project'
                     html += '<h2 class="mdl-card__title-text">'+item['user_name']+'</h2>'
                     html += '</div>'
                     html += '<div class="mdl-card__supporting-text">'
                     html += item['company_name']
-                    html += ' / '
+                    html += '소속 / '
                     html += item['user_name']
-                    html += ' / '
+                    html += '님 : '
                     html += item['user_phone']
                     html += '</div>'
                     html += '<div class="mdl-card__menu">'
@@ -40,6 +40,7 @@ $(document).ready(function(){
         //});
     });
     $('#submitButton').on('click', function(e){
+        var user_id = $('#user_id').val();
         var user_name = $('#user_name').val();
         var user_phone = $('#user_phone').val();
         var company_name = $('#company_name').val();
@@ -49,6 +50,7 @@ $(document).ready(function(){
             datatype: 'json',
             async: true,
             data:JSON.stringify({
+                user_id: user_id,
                 user_name: user_name,
                 user_phone: user_phone,
                 company_name: company_name
@@ -64,8 +66,10 @@ $(document).ready(function(){
             },
             complete: function(r){
                 console.log('completed', r);
-                $('#p2').hide();
-                location.reload();
+                setTimeout(function() {
+                    $('#p2').hide();
+                    location.reload();
+                }, 1000);
             }
         });
     });
