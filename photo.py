@@ -11,6 +11,7 @@ W, H = (400, 250)
 
 # 1) logo img
 logo = Image.open('./web/imgs/logo.en.resized.png')
+# logo = Image.open('/tmp/logo.en.resized.png')
 
 # 2) qr code img
 qr = qrcode.QRCode(
@@ -36,13 +37,12 @@ font_B = ImageFont.truetype(ttf, 22)
 
 draw = ImageDraw.Draw(img)
 
-pass_type = 'FULL CONFERENCE PASS'
 draw.text((150, 110), user_name, fill='#000', font=font_b)
 draw.text((150, 140), f'From {company_name}', fill='#000', font=font_m)
 
 draw.rectangle((145, 170, 375, 205), fill='#f0f0f0')
+draw.text((150, 170), 'FULL CONFERENCE PASS', fill='#ed244b', font=font_B)
 
-draw.text((150, 170), pass_type, fill='#ed244b', font=font_B)
 img.save(f'/tmp/signed.jpg', quality=100)
 # img.save(f'./signed.jpg', quality=100)
 # img.show()
