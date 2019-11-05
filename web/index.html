@@ -29,15 +29,6 @@
     <body>
         <!-- Simple header with fixed tabs. -->
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
-        <dialog class="mdl-dialog">
-        <div id="showImg" class="mdl-dialog__content">
-        </div>
-        <div class="mdl-dialog__actions mdl-dialog__actions">
-            <button class="close mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                CLOSE 
-            </button>
-        </div>
-        </dialog>
             <header class="mdl-layout__header">
                 <div class="mdl-layout__header-row">
                     <!-- Title -->
@@ -118,6 +109,15 @@
                         </div>
                     </div>
                 </section>
+                <dialog class="mdl-dialog hide">
+                    <div id="showImg" class="mdl-dialog__content">
+                    </div>
+                    <div class="mdl-dialog__actions mdl-dialog__actions">
+                        <button class="close mdl-button  mdl-button--raised">
+                            CLOSE
+                        </button>
+                    </div>
+                </dialog>
             </main>
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
