@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var ENDPOINT = 'https://epn2pajpf4.execute-api.ap-northeast-2.amazonaws.com/dev/conference'
-    var CF = ''
+    var CF = 'https://d21wnzpstszop8.cloudfront.net'
     var dialog = document.querySelector('dialog');
     var showModalButton = $('.show-modal');
     if (! dialog.showModal) {
@@ -10,7 +10,7 @@ $(document).ready(function(){
         e.preventDefault();
         var user = $(this).data('user');
         var type = $(this).data('type');
-        $('#showImg').html('<img src="http://d21wnzpstszop8.cloudfront.net/qrcodes/'+user+'/'+type+'/qrcode.jpg"/>');
+        $('#showImg').html('<img src="'+CF+'/qrcodes/'+user+'/'+type+'/qrcode.jpg"/>');
         dialog.showModal();
     });
     dialog.querySelector('.close').addEventListener('click', function() {
