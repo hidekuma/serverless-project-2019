@@ -1,11 +1,11 @@
 
 @font-face {
-    font-family: 'NotoSansCJKkr-Regular';
-    src: url(./fonts/NotoSansCJKkr-Regular.otf) format('opentype');
+    font-family: 'NotoSansCJKkr-Bold';
+    src: url('./fonts/NotoSansMonoCJKkr-Bold.otf') format('opentype');
 }
 
 body * {
-    font-family: NotoSansCJKkr-Regular;
+    font-family: NotoSansCJKkr-Bold;
 }
 
 .demo-card-wide.mdl-card {
