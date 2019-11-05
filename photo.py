@@ -1,49 +1,49 @@
 from PIL import Image, ImageDraw, ImageFont
 import qrcode
+type = 'Serverless web project'
 user_phone = '010-4124-4444'
 user_name = '히데쿠마'
 user_id = 'hidekuma'
 company_name = 'TestCompany.inc'
-title = 'Fast Campus 2019'
-ttf = './NotoSansMonoCJKkr-Bold.otf'
-thin_ttf = './NotoSansCJKkr-Regular.otf'
+ttf = './web/fonts/NotoSansMonoCJKkr-Bold.otf'
 
+W, H = (400, 250)
+
+# 1) logo img
+logo = Image.open('./web/imgs/logo.en.resized.png')
+
+# 2) qr code img
 qr = qrcode.QRCode(
     version=1,
     error_correction=qrcode.constants.ERROR_CORRECT_L,
     box_size=4,
     border=4,
-
 )
+
 qr.add_data(user_phone)
 qr.make(fit=True)
 qr_img = qr.make_image(fill_color="black", back_color="white")
 
+# 3) merge
+img = Image.new('RGB', (W, H), color='#fff')
+img.paste(logo, (15, 15), logo)
+img.paste(qr_img, (15, 100))
 
-W, H = (300, 210)
-font_s = ImageFont.truetype(thin_ttf, 12)
+# 4) draw
 font_m = ImageFont.truetype(ttf, 15)
 font_b = ImageFont.truetype(ttf, 20)
+font_B = ImageFont.truetype(ttf, 22)
 
-img = Image.new('RGB', (W, H), color='#fff')
 draw = ImageDraw.Draw(img)
 
-draw.line((0, 0, W, 0), fill='#000')
-draw.line((0, 0, 0, H), fill='#000')
-draw.line((0, H-1, W, H-1), fill='#000')
-draw.line((W-1, 0, W-1, H), fill='#000')
+pass_type = 'FULL CONFERENCE PASS'
+draw.text((150, 110), user_name, fill='#000', font=font_b)
+draw.text((150, 140), f'From {company_name}', fill='#000', font=font_m)
 
-draw.text((20, 10), title, fill='#000', font=font_b)
-text_size = draw.textsize(title, font=font_b)
-draw.rectangle((0, text_size[1]+10, img.size[0], text_size[1]+15), fill='#000')
-draw.text((20, text_size[1]+25), 'Serverless web project', fill='#000', font=font_m)
-draw.line((0, text_size[1]+50, img.size[0], text_size[1]+50), fill='#000')
+draw.rectangle((145, 170, 375, 205), fill='#f0f0f0')
 
-draw.text((130, 110), user_name, fill='#000', font=font_m)
-draw.text((130, 130), f':: {company_name}', fill='#000', font=font_s)
-draw.text((130, 160), f'[FULL CONFERENCE PASS]', fill='#ed244b', font=font_s)
-img.paste(qr_img, (1, text_size[1]+60))
-
-# img.save(f'/tmp/signed.jpg')
-img.show()
+draw.text((150, 170), pass_type, fill='#ed244b', font=font_B)
+img.save(f'/tmp/signed.jpg', quality=100)
+# img.save(f'./signed.jpg', quality=100)
+# img.show()
 
