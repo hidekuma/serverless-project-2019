@@ -14,7 +14,7 @@ body * {
 }
 .demo-card-wide > .mdl-card__title {
     color: #000;
-    height: 300px;
+    height: 250px;
     background: url('./imgs/logo.kr.png') center;
     background-repeat: no-repeat;
     background-color: #f9f9f9;
