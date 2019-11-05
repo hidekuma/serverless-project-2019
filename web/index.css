@@ -1,0 +1,38 @@
+
+@font-face {
+    font-family: 'NotoSansCJKkr-Regular';
+    src: url(./fonts/NotoSansCJKkr-Regular.otf) format('opentype');
+}
+
+body * {
+    font-family: NotoSansCJKkr-Regular;
+}
+
+.demo-card-wide.mdl-card {
+    width: 100%;
+    min-width: 300px;
+}
+.demo-card-wide > .mdl-card__title {
+    color: #000;
+    height: 300px;
+    background: url('./imgs/logo.kr.png') center;
+    background-repeat: no-repeat;
+    background-color: #f9f9f9;
+}
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+.demo-list-three {
+      width: 100%;
+}
+
+/*.history-card-wide.mdl-card {*/
+    /*width: 100%;*/
+    /*min-width: 300px;*/
+/*}*/
+
+/*.history-card-wide > .mdl-card__title {*/
+    /*color: #fff;*/
+    /*height: 100px;*/
+/*}*/
