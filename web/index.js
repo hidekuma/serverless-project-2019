@@ -10,7 +10,7 @@ $(document).ready(function(){
         e.preventDefault();
         var user = $(this).data('user');
         var type = $(this).data('type');
-        $('#showImg').html('<img src="'+CF+'/qrcodes/'+user+'/'+type+'/qrcode.jpg"/>');
+        $('#showImg').html('<img style="width:100%" src="'+CF+'/qrcodes/'+user+'/'+type+'/qrcode.jpg"/>');
         dialog.showModal();
     });
     dialog.querySelector('.close').addEventListener('click', function() {
@@ -27,7 +27,7 @@ $(document).ready(function(){
                     html += '<li class="mdl-list__item mdl-list__item--three-line"> <span class="mdl-list__item-primary-content"> <i class="material-icons mdl-list__item-avatar">person</i> <span>'
                     html += item['user_name']
                     html += '</span> <span class="mdl-list__item-text-body">'
-                    html += 'From. ' + item['company_name'] +'<br/> '+item['type']+' 컨퍼런스 참여신청 완료'
+                    html += 'From. ' + item['company_name'] +'<br/> '+item['type']
                     html += '</span> </span> <span class="mdl-list__item-secondary-content"> <a data-user="'+item['user_id']+'" data-type="'+item['type']+'" class="show-modal mdl-list__item-secondary-action" href="#"><i class="material-icons">print</i></a> </span> </li>'
                 })
                 html += '</ul>'
