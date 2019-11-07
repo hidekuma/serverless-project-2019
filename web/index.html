@@ -64,26 +64,26 @@
                                                 </select>
                                                 <label class="mdl-textfield__label" for="type">Conference</label>
                                             </div>
-                                            <div class="mdl-textfield mdl-js-textfield">
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                                 <input class="mdl-textfield__input" type="text" id="user_id">
-                                                <label class="mdl-textfield__label" for="user_id">User ID...</label>
+                                                <label class="mdl-textfield__label" for="user_id">User ID</label>
                                             </div>
-                                            <div class="mdl-textfield mdl-js-textfield">
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                                 <input class="mdl-textfield__input" type="text" id="user_name">
-                                                <label class="mdl-textfield__label" for="user_name">Name...</label>
+                                                <label class="mdl-textfield__label" for="user_name">Name</label>
                                             </div>
-                                            <div class="mdl-textfield mdl-js-textfield">
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                                 <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="user_phone">
-                                                <label class="mdl-textfield__label" for="user_phone">Phone Number...</label>
+                                                <label class="mdl-textfield__label" for="user_phone">Phone Number</label>
                                                 <span class="mdl-textfield__error">Input is not a number!</span>
                                             </div>
-                                            <div class="mdl-textfield mdl-js-textfield">
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                                 <input class="mdl-textfield__input" type="text" id="company_name">
-                                                <label class="mdl-textfield__label" for="company_name">Company Name...</label>
+                                                <label class="mdl-textfield__label" for="company_name">Company Name</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="p2" style="display:none;" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+                                    <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
                                     <div class="mdl-card__actions mdl-card--border">
                                         <button id="submitButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                                             Submit
@@ -112,10 +112,9 @@
                         <dialog class="mdl-dialog hide">
                         <div id="showImg" class="mdl-dialog__content">
                         </div>
-                        <div class="mdl-dialog__actions mdl-dialog__actions">
-                            <button class="close mdl-button">
-                                CLOSE
-                            </button>
+                        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+                          <button type="button" class="mdl-button print">Print</button>
+                          <button type="button" class="mdl-button close">Close</button>
                         </div>
                         </dialog>
                     </div>

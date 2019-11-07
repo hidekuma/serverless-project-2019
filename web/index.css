@@ -29,19 +29,14 @@ body * {
 
 .mdl-dialog {
     min-width: 300px;
-    height: 250px;
+    height: 300px;
 }
 
 .mdl-dialog__content {
     padding: 0px;
 }
 
-/*.history-card-wide.mdl-card {*/
-    /*width: 100%;*/
-    /*min-width: 300px;*/
-/*}*/
-
-/*.history-card-wide > .mdl-card__title {*/
-    /*color: #fff;*/
-    /*height: 100px;*/
-/*}*/
+#p2 {
+    width: 100%;
+    display: none;
+}

@@ -16,6 +16,9 @@ $(document).ready(function(){
     dialog.querySelector('.close').addEventListener('click', function() {
         dialog.close();
     });
+    dialog.querySelector('.print').addEventListener('click', function() {
+        print();
+    });
     function load_data(){
         $.ajax({
             url: ENDPOINT +'?user_id=*',
