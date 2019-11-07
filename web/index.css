@@ -1,13 +1,3 @@
-
-@font-face {
-    font-family: 'NotoSansCJKkr-Bold';
-    src: url('./fonts/NotoSansMonoCJKkr-Bold.otf') format('opentype');
-}
-
-body * {
-    font-family: NotoSansCJKkr-Bold;
-}
-
 .demo-card-wide.mdl-card {
     width: 100%;
     min-width: 300px;
@@ -39,4 +29,8 @@ body * {
 #p2 {
     width: 100%;
     display: none;
+}
+
+#submitButton, .custom-btn {
+    font-weight: bold;
 }
