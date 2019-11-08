@@ -1,0 +1,18 @@
+.demo-card-wide.mdl-card {
+  width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 250px;
+  background-color: #f0f0f0;
+  background: url('./imgs/logo.kr.png') center;
+  background-repeat: no-repeat;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+#p2 {
+    width: 100%;
+    display: none;
+}
