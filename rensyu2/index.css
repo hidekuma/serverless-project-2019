@@ -5,8 +5,8 @@
   color: #fff;
   height: 250px;
   background-color: #f0f0f0;
-  background: url('./imgs/logo.kr.png') center;
-  background-repeat: no-repeat;
+  background: url('http://placehold.it/300x300') center;
+  /*background-repeat: no-repeat;*/
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
@@ -15,4 +15,16 @@
 #p2 {
     width: 100%;
     display: none;
+}
+
+.demo-list-three {
+  width: 100%;
+}
+
+#showBox {
+    padding: 0px 0px 3px 0px;
+}
+
+#showBox img{
+    width: 100%;
 }

@@ -1,9 +1,7 @@
 $(document).ready(function(){
     function dialog_init(){
         var dialog = document.querySelector('dialog');
-        if (! dialog.showModal) {
-            dialogPolyfill.registerDialog(dialog);
-        }
+        dialogPolyfill.registerDialog(dialog);
         $(document).on('click', '.show-modal', function(e){
             e.preventDefault();
             dialog.showModal();
