@@ -67,7 +67,6 @@ $(document).ready(function(){
             },
             success: function(r){
                 console.log('success', r);
-                alert('success! reloading...')
             },
             fail: function(err){
                 console.log('failed', err);
@@ -78,7 +77,7 @@ $(document).ready(function(){
                 setTimeout(function() {
                     $('#p2').hide();
                     location.reload();
-                }, 3000);
+                }, 1000);
             }
         });
     });
