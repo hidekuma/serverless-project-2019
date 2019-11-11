@@ -18,6 +18,7 @@ show arch
 ## DynamoDB
 show dashboard
 create table, key
+create item
 comparing mysql
 table 254, item 400kb, attribue 32depth
 create table, composite key
