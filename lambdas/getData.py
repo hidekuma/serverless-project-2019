@@ -25,4 +25,3 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'items': items['Items']
     }
-
