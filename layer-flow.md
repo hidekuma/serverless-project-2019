@@ -6,8 +6,8 @@
 4. mkdir venv & cd venv
 5. python3 -m virtualenv -p /usr/bin/python3 py37
 6. source py37/bin/activate
-7. mkdir -p ~/dist/python
-8. pip3 install pillow qrcode -t ~/dist/python/
-9. rm -rf ~/dist/python/__pycache__
-10. zip -r output.zip ./dist/python/
+7. mkdir ~/python
+8. pip3 install pillow qrcode -t ~/python/
+9. rm -rf ~/python/__pycache__
+10. zip -r ./output.zip ./python/
 11. scp -i ~/.ssh/test.pem ec2-user@{host}:~/output.zip .
