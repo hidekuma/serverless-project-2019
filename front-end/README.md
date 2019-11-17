@@ -24,7 +24,9 @@
 - [codepen.io](https://codepen.io/hidekuma/pen/ExxRjJd)
 
 ### Step2
+API Gateway, CloudFront Endpoint 변경 필요
 [Chapter05 서버리스 어플리케이션 개발 (3) - 03 API Gateway와 Front-end 연동](./step2)
 
 ### Step3
-[Step2 작업내용 정리본](./step3)
+API Gateway, CloudFront Endpoint 변경 필요
+[Step2 작업본 정리](./step3)
