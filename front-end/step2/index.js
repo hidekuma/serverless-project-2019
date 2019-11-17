@@ -6,7 +6,7 @@ $(document).ready(function(){
         var data = $(this).data();
         var user = data['user'];
         var type = data['type'];
-        $('#showBox').html('<img style="width:100%" src="'+'https://d1smgvzeqv5n0x.cloudfront.net'+'/qrcodes/'+user+'/'+type+'/qrcode.jpg"/>');
+        $('#showBox').html('<img style="width:100%" src="'+'{cloudfront:endpoint}'+'/qrcodes/'+user+'/'+type+'/qrcode.jpg"/>');
         dialog.showModal();
     });
     dialog.querySelector('.close').addEventListener('click', function() {
@@ -27,7 +27,7 @@ $(document).ready(function(){
         var type = $('#type').val();
 
         $.ajax({
-            url: 'https://f1qo3lrd4k.execute-api.ap-northeast-2.amazonaws.com/dev/conference',
+            url: '{api-gateway:endpoint}',
             method: 'post',
             datatype: 'json',
             data:JSON.stringify({
@@ -51,7 +51,7 @@ $(document).ready(function(){
 
     function load_data(){
         $.ajax({
-            url: 'https://f1qo3lrd4k.execute-api.ap-northeast-2.amazonaws.com/dev/conference/users/*',
+            url: '{ap-gateway:endpoint}',
             method: 'get',
             success: function(r){
                 var html = '';
@@ -72,24 +72,3 @@ $(document).ready(function(){
     }
     load_data();
 });
-
-                  //<li class="mdl-list__item mdl-list__item--three-line">
-                    //<span class="mdl-list__item-primary-content">
-                      //<i class="material-icons mdl-list__item-avatar">person</i>
-                      //<span>Name</span>
-                      //<span class="mdl-list__item-text-body">
-                        //From Company Name, Serverless Web project
-                      //</span>
-                    //</span>
-                    //<span class="mdl-list__item-secondary-content">
-                      //<a class="show-modal mdl-list__item-secondary-action" href="#"><i class="material-icons">print</i></a>
-                    //</span>
-                  //</li>
-
-
-
-
-
-
-
-

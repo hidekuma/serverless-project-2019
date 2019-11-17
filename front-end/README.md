@@ -15,3 +15,14 @@
     - Text Fields
     - Dialog (add dialog polyfill)
 4. Add jQuery
+
+## Steps
+### step1
+Front-end 작업
+- [codepen.io](https://codepen.io/hidekuma/pen/ExxRjJd)
+
+### step2
+강의 완료 후, output
+
+### step3
+Front-end 정리작업 완료본
