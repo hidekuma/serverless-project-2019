@@ -47,7 +47,9 @@ $ deactivate
     - POST : [post.py](./back-end/post.py)
 - Make Image
     - GET : [make.py](./back-end/make.py)
-        
+
+---
+
 ## 레퍼런스
 ### Lambda
 - [런타임](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/lambda-runtimes.html)
@@ -63,8 +65,11 @@ $ deactivate
 - [캐싱기간관리](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Expiration.html)
 - [압축](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html)
 - [한도](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html)
+- [설정값](https://hidekuma.github.io/aws/cloudfront/cloudfront-settings/)
 
 ### API Gateway
 - [매핑 모델](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/models-mappings.html)
 - [매핑 템플릿](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html)
 
+### S3
+- [S3 데이터모델](https://hidekuma.github.io/aws/s3/s3-data-model/)
