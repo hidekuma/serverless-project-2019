@@ -19,12 +19,12 @@
 5. Build business logic
 
 ## Steps
-### step1
+### Step1
 [Chapter03 서버리스 어플리케이션 개발 (1) - 01 Front-end 화면 개발 (1)](./step1)
 - [codepen.io](https://codepen.io/hidekuma/pen/ExxRjJd)
 
-### step2
+### Step2
 [Chapter05 서버리스 어플리케이션 개발 (3) - 03 API Gateway와 Front-end 연동](./step2)
 
-### step3
-[step2 작업내용 정리 완료본](./step3)
+### Step3
+[Step2 작업내용 정리본](./step3)
