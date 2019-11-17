@@ -8,6 +8,7 @@
 - docker-compose
 
 ## AWS 사용 서비스 분포도
+![AWS services to use](./i/aws_to_use.png)
 - API Gateway
 - CloudWatch
 - CloudFront
