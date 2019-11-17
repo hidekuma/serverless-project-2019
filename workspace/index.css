@@ -1,11 +1,13 @@
 .demo-card-wide.mdl-card {
   width: 100%;
+  min-width: 400px;
 }
 
 .demo-card-wide > .mdl-card__title {
   color: #fff;
   height: 250px;
-  background: url('http://placehold.it/300x300?text=loading') center;
+  background: url('./imgs/logo.kr.png') center;
+  background-repeat: no-repeat;
 }
 
 .demo-card-wide > .mdl-card__menu {
