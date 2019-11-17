@@ -32,26 +32,6 @@ $ deactivate
 - SNS
 - IAM
 
-### 레퍼런스
-#### Lambda
-- [런타임](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/lambda-runtimes.html)
-- [한도](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/limits.html)
-- [계층](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/configuration-layers.html)
-
-#### DynamoDB
-- [제한값](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/Limits.html)
-- [핵심구성요소](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.TablesItemsAttributes)
-- [읽기일관성](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html)
-
-#### ClodFront
-- [캐싱기간관리](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Expiration.html)
-- [압축](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html)
-- [한도](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html)
-
-#### API Gateway
-- [매핑 모델](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/models-mappings.html)
-- [매핑 템플릿](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html)
-
 ## 작업내용
 ### Front-end
 [프런트엔드 화면 구성 (./front-end)](./front-end)
@@ -67,3 +47,24 @@ $ deactivate
     - POST : [post.py](./back-end/post.py)
 - Make Image
     - GET : [make.py](./back-end/make.py)
+        
+## 레퍼런스
+### Lambda
+- [런타임](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/lambda-runtimes.html)
+- [한도](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/limits.html)
+- [계층](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/configuration-layers.html)
+
+### DynamoDB
+- [제한값](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/Limits.html)
+- [핵심구성요소](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.TablesItemsAttributes)
+- [읽기일관성](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html)
+
+### ClodFront
+- [캐싱기간관리](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Expiration.html)
+- [압축](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html)
+- [한도](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html)
+
+### API Gateway
+- [매핑 모델](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/models-mappings.html)
+- [매핑 템플릿](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html)
+
