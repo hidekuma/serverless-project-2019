@@ -1,4 +1,4 @@
-# 2019 AWS study
+# Serverless Web Project
 
 ## Environment
 ### required
@@ -9,13 +9,15 @@
     - python 3.7.3
     - virtualenv
         - awscli
+- docker
+- docker-compose
 
-## Serverless web application
+## Using AWS services
 - API Gateway
+- CloudWatch
+- CloudFront
+- DynamoDB
 - Lambda
 - S3
-- DynamoDB
-
-### flow
-1. API Gatway - lambda - dynamoDB
-2. S3 (+CloudFront)
+- SNS
+- IAM
