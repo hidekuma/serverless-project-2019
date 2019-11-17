@@ -34,14 +34,14 @@ $ deactivate
 
 ## 작업내용
 ### Front-end
-[프런트엔드 화면 구성](./front-end)
+[프런트엔드 화면 구성 (./front-end)](./front-end)
 - 작업완료도에 따라 다름
     1. [화면 작성](./front-end/step1)
     2. [API 연동 완료](./front-end/step2)
     3. [작업본 정리](./front-end/step3)
 
 ### Back-end
-[백엔드기능 구현](./back-end)
+[백엔드기능 구현 (./back-end)](./back-end)
 - API
     - GET : [get.py](./back-end/get.py)
     - POST : [post.py](./back-end/post.py)
