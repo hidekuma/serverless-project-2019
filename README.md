@@ -27,7 +27,7 @@
     3. [작업본 정리](./front-end/step3)
 
 ### Back-end
-백엔드기능 구현
+[백엔드기능 구현](./lambda-functions)
 - API
     - GET : [get.py](./lambda-functions/get.py)
     - POST : [post.py](./lambda-functions/post.py)

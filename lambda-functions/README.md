@@ -1,5 +1,5 @@
 # Lambda functions
-APIGateway에 연결하는 최종 Lambda함수
+APIGateway에 연결하는 최종 Lambda함수들
 
 ## get.py
 ### actions
@@ -16,10 +16,10 @@ APIGateway에 연결하는 최종 Lambda함수
 - qrcode
 
 ### layers
-Create a Python package zip file for use in AWS lambda layers.
+람다 계층(layers)에서 사용할 압축파일 제작방법
 
 #### EC2 - Amazonlinux(2)
-Launch an EC2 Instance.
+EC2 인스턴스를 이용한 방법
 1. `sudo yum update -y`
 2. `sudo yum install python3 -y`
 3. `pip3 install --user virtualenv`
@@ -34,7 +34,7 @@ Launch an EC2 Instance.
 11. `scp -i ~/.ssh/test.pem ec2-user@{host}:~/output.zip .`
 
 #### Docker - Amazonlinux
-Launch amazonlinux with Docker.
+도커 컨테이너를 이용한 방법
 - [python-zip-of-aws-lambda-layers](https://github.com/hidekuma/python-zip-of-aws-lambda-layers)
 ```bash
 git clone https://github.com/hidekuma/python-zip-of-aws-lambda-layers.git
