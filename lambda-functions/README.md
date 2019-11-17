@@ -16,7 +16,7 @@ APIGateway에 연결하는 최종 Lambda함수
 - qrcode
 
 ### layers
-#### EC2 - Amazonilnux(2)
+#### EC2 - Amazonlinux(2)
 1. `sudo yum update -y`
 2. `sudo yum install python3 -y`
 3. `pip3 install --user virtualenv`
@@ -30,7 +30,7 @@ APIGateway에 연결하는 최종 Lambda함수
 10. `zip -r ./output.zip ./python/`
 11. `scp -i ~/.ssh/test.pem ec2-user@{host}:~/output.zip .`
 
-#### Docker - Amazonilnux
+#### Docker - Amazonlinux
 - https://github.com/hidekuma/python-zip-of-aws-lambda-layers
 ```bash
 git clone https://github.com/hidekuma/python-zip-of-aws-lambda-layers.git
