@@ -32,6 +32,8 @@ $ deactivate
 - SNS
 - IAM
 
+---
+
 ## 작업내용
 ### Front-end
 [프런트엔드 화면 구성 (./front-end)](./front-end)
