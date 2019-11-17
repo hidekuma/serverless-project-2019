@@ -6,7 +6,7 @@
 .demo-card-wide > .mdl-card__title {
   color: #fff;
   height: 250px;
-  background: url('./imgs/logo.kr.png') center;
+  background: url('http://placehold.it/300x300?text=loading') center;
   background-repeat: no-repeat;
 }
 
