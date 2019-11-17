@@ -37,10 +37,10 @@ EC2 인스턴스를 이용한 방법
 도커 컨테이너를 이용한 방법
 - [python-zip-of-aws-lambda-layers](https://github.com/hidekuma/python-zip-of-aws-lambda-layers)
 ```bash
-git clone https://github.com/hidekuma/python-zip-of-aws-lambda-layers.git
-mkdir dist
-docker-compose up --build
-cd dist # and show output.zip
+$ git clone https://github.com/hidekuma/python-zip-of-aws-lambda-layers.git
+$ mkdir dist
+$ docker-compose up --build
+$ cd dist # and show output.zip
 ```
 ### actions
 - S3: get item, put item

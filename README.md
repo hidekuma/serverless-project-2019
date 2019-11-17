@@ -7,6 +7,20 @@
 - docker
 - docker-compose
 
+### 셋팅
+파이썬3와 가상환경 설치
+```bash
+$ yum update -y
+$ yum install python3 -y
+$ pip3 install virtulenv
+$ mkdir virutalenv directory, e.g. venv
+$ virtualenv -p {python3_path} {env_name}
+$ source {env_name}/bin/activate
+$ pip3 install awscli
+$ awscli configure
+$ deactivate
+```
+
 ## AWS 사용 서비스 분포도
 ![AWS services to use](./i/aws-to-use.png)
 - API Gateway
