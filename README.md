@@ -32,6 +32,8 @@ $ deactivate
 - SNS
 - IAM
 
+## 아키텍처
+![AWS architecture](./i/aws-arch.png)
 ---
 
 ## 작업내용
