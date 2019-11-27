@@ -46,6 +46,10 @@ $ deactivate
 
 ### Back-end
 [백엔드기능 구현 (./back-end)](./back-end)
+#### API Gateway
+- [serverless2019-dev-swagger-postman.json](./back-end/serverless2019-dev-swagger-postman.json)
+
+#### lambdas
 - API
     - GET : [get.py](./back-end/get.py)
     - POST : [post.py](./back-end/post.py)
