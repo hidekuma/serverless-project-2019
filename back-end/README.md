@@ -1,5 +1,9 @@
 # Lambda functions
 APIGateway에 연결하는 최종 Lambda함수들
+- 파이썬 패키지 인스톨 예시
+```
+(env)$ pip3 install pillow qrcode awscli
+```
 - 파이썬 파일 실행시 다음 커맨드 사용
 ```
 (env)$ python {file_name}.py
