@@ -5,6 +5,9 @@ APIGateway에 연결하는 최종 Lambda함수들
 (env)$ python {file_name}.py
 ```
 
+## API Gateway
+- [serverless2019-dev-swagger-postman.json](./serverless2019-dev-swagger-postman.json)
+
 ## get.py
 ### actions
 - Dynamodb: get item
